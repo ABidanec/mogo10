@@ -341,15 +341,20 @@ ul{
 						.b-about__text{
 							display: block;
 							position: absolute;
-							top: 0;
+							top: 40%;
 							bottom: 0;
 							left: 0;
 							right: 0;
 							text-align: center;
 						}
 							.b-about__ico{
-								font-family: 'FontAwesome';
+								font-family: 'svgfont_1regular';
+                                font-size: 0.4em;
 							}
+
+                            .b-about__head{
+                                margin: 0
+                            }
 					.b-about__img{
 						position: absolute;
 						width: 100%;
@@ -424,6 +429,25 @@ ul{
 		width: 24%;
 		padding: 3% 0 3% 9%;
 	}
+		.b-services__item_photo,
+		.b-services__item_design,
+		.b-services__item_creativ,
+		.b-services__item_seo,
+		.b-services__item_html,
+		.b-services__item_digital{
+            position: absolute;
+			font-family: 'svgfont_1regular';
+            font-size: 0.7em;
+			color: #95e1d3;
+            left: 16%;
+            top: 36%;
+            width: 6%;
+		}
+        
+        .b-services__item_creativ{
+            top: 33%;
+        }
+
 
 		.b-services__list-head{
 			text-transform: uppercase;
@@ -466,3 +490,20 @@ ul{
 		z-index: 10;
 	}
 /*end b-feature*/
+
+/*.b-services2*/
+.b-services2__content{
+    margin: 0 0 2em 0;
+}
+
+.b-services2__list-img{
+    float: left;
+    width:48%;
+}
+
+.b-services2__right{
+    padding: 0 0 0 50%;
+}
+
+/*end b-services2*/
+
