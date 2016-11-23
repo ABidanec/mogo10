@@ -436,8 +436,8 @@ ul{
 		.b-services__item_html,
 		.b-services__item_digital{
             position: absolute;
-			font-family: 'svgfont_1regular';
-            font-size: 0.7em;
+			font-family: 'ico-fonts107-mogo10regular';
+            font-size: 3em;
 			color: #95e1d3;
             left: 16%;
             top: 36%;
@@ -504,6 +504,20 @@ ul{
 .b-services2__right{
     padding: 0 0 0 50%;
 }
+
+    .b-services2__item-text{
+        position: relative;
+        padding: 2%;
+        border: 1px solid #e5e5e5;
+    }
+        .b-services2__ico{
+            position: absolute;
+            top: 1%;
+            left: 1%;
+            font-family: 'ico-fonts107-mogo10regular';
+            font-size: 2em;
+			color: #95e1d3;
+        }
 
 /*end b-services2*/
 
