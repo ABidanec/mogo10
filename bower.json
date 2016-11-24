@@ -2,6 +2,7 @@
   "name": "prtfolio 10",
   "dependencies": {
     "modernizr": "2",
-    "normalize-css": "normalize.css#^5.0.0"
+    "normalize-css": "normalize.css#^5.0.0",
+    "jquery": "^3.1.1"
   }
 }
