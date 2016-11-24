@@ -541,6 +541,112 @@ ul{
             overflow-y: hidden;
         }
 
+/*comments*/
+.b-comments{
+    display: block;
+    background: #f8f8f8;
+    padding: 4.25em 0;
+}
+
+    .b-comments__item{
+        width: 86%;
+        margin: 0 0 0 14%;
+        clear:both;
+    }
+
+        .b-comments__ava{
+            position: relative;
+            float: left;
+            height: 9em;
+            width: 9em;
+            border: 3px solid #95e1d3;
+        }
+            .b-comments__ava:before{
+                content: "I";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                display: block;
+                font-family: 'ico-fonts107-mogo10regular';
+                color: #95e1d3;
+                font-size: 6em;
+                margin: -0.6em 0 0 -0.25em;
+            }
+        .b-comments__content{
+            float: left;
+            width: 76%;
+            margin: 0 0 0 3%;
+            padding: 0.687em 0 0 0;
+            
+        }
+            .b-comments__text{
+                font-family: 'cuprumbold';
+                font-size: 1.5em;
+            }
+                .b-comments__text p{
+                    color: #999;
+                    margin: 0 0 0.6em 0;
+                }
+            .b-comments__author{
+                position: relative;
+                font-family: 'kaushan_scriptregular';
+                padding: 0 0 0 4em;
+               
+            }
+                .b-comments__author:before{
+                    content: " ";
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    width: 3.75em;
+                    height: 3px;
+                    background: #f38181;
+                    
+                }
+/*comments navi*/
+
+.b-comments-nav__link__prev,
+.b-comments-nav__link_next{
+    position: absolute;
+    display: block;
+    height: 3em;
+    width: 2em;
+    font-family: 'FontAwesome';
+    text-decoration: none;
+    font-size: 3em;
+    color: #cfcfcf;
+}
+
+.b-comments-nav__link__prev:hover,
+.b-comments-nav__link_next:hover{
+    color: #555;
+}
+
+.b-comments-nav__link__prev{
+    left: 0;
+}
+
+.b-comments-nav__link_next{
+    right: 0;
+}
+
+.b-comments-nav__link__prev:after{
+    position: absolute;
+    top: 30%;
+    left: 1em;
+    content: "\f104";
+}
+.b-comments-nav__link_next:after{
+    position: absolute;
+    top: 30%;
+    right: 0.5em;
+    content: "\f105";
+}
+
+/*end comments navi*/
+
+/*end comments*/
 
 /*end b-services2*/
 
