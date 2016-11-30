@@ -348,8 +348,8 @@ ul{
 							text-align: center;
 						}
 							.b-about__ico{
-								font-family: 'svgfont_1regular';
-                                font-size: 0.4em;
+								 font-family: 'ico-fonts107-mogo10regular';
+                                font-size: 2.5em;
 							}
 
                             .b-about__head{
@@ -512,14 +512,29 @@ ul{
     }
         .b-services2__list-head{
             position: relative;
-            border-bottom: 1px solid #e5e5e5;
             padding: 3% 1% 3% 10%;
-            margin: 0 0 1% 0;
+/*            margin: 0 0 1% 0;*/
             font-size: 0.875em;
             font-weight: 700;
             text-transform: uppercase;
             min-height: 1em;
         }
+            
+            .b-services2_button_down:after,
+            .b-services2_button_up:after{
+                font-family: 'FontAwesome';
+                font-size: 2em;
+                color: #ccc;
+                position: absolute;
+                top: 25%;
+                right: 2%;
+            }
+            .b-services2_button_down:after{
+                content: "\f107";
+            }
+            .b-services2_button_up:after{
+                content: "\f106";
+            }
 
             .b-services2__ico{
                 position: absolute;
@@ -539,6 +554,10 @@ ul{
             color: #999;
             max-height: 9.375em;
             overflow-y: hidden;
+        }
+
+        .b-services2__list-desc_view{
+            display: block;
         }
 
 /*comments*/
@@ -650,3 +669,119 @@ ul{
 
 /*end b-services2*/
 
+/*b-team*/
+.b-team__item{
+    float: left;
+    width: 30%;
+    margin: 0 0 0 3%;
+    position: relative;
+    overflow: hidden;
+}
+.l-team__wr{
+    position: relative;
+}
+    .l-team-soc__wr{
+        position: absolute;
+        display: none;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+    }
+.l-team__wr:hover .l-team-soc__wr{
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#db7474+0,e3cd7c+100 */
+    background: #db7474; /* Old browsers */
+    background: -moz-linear-gradient(top,  #db7474 0%, #e3cd7c 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #db7474 0%,#e3cd7c 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #db7474 0%,#e3cd7c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db7474', endColorstr='#e3cd7c',GradientType=0 ); /* IE6-9 */
+    opacity: .9;
+}
+
+.b-team-soc__list{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 3.5em;
+    width: 59.5%;
+    margin: -1.75em 0 0 -30%;
+    
+}
+    .b-team-soc__item{
+        position: relative;
+        display: inline-block;
+        width: 23%;
+        background: #95e1d3;
+    }
+        .b-team-soc__link{
+            display: block;
+            padding: 0.3em 0;
+            width: 100%;
+            text-decoration: none;
+            color: #f38181;
+            background: #fce38a;
+            text-align: center;
+        }
+            .b-team-soc__link:hover{
+                background: #f38181;
+                color: #fff;
+            }
+            .fa-facebook,
+            .fa-twitter,
+            .fa-pinterest-p,
+            .fa-instagram{
+                font-family: 'FontAwesome';
+                font-size: 2em;                
+            }
+    .b-team__head{
+        text-align: center;
+        color: #333;
+        text-transform: uppercase;
+    }
+
+    .b-team__desc{
+        text-align: center;
+        color: #999;
+        font-style: italic;
+    }
+
+/*end b-team*/
+
+/*b-logos*/
+.b-logos{
+    margin: 9.12em 0;
+    background: #f4f4f4;
+}
+    .b-logos__item{
+        position: relative;
+        float: left;
+        width: 16.66%;
+        text-align: center;
+    }
+/*end b-logos*/
+
+/*b-works*/
+.b-works{
+    
+}
+.b-works__list{
+    
+}
+    .b-works__item{
+        float: left;
+        width: 25%;
+        clear: right;
+        overflow: hidden;
+        vertical-align: top;
+    }
+        .b-works__img{
+            height: 100%;
+        }
+        .b-works__list-content{
+            display: none;
+        }
+/*end b-works*/
