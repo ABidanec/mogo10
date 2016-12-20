@@ -37,9 +37,11 @@ body{
 .l-wrapper{
 	position: relative;
 	min-height: 100%;
-	overflow: height;
+	overflow: hidden;
 }
 	.l-wrapper:after{
+        content: "";
+        display: block;
 		height: 560px;
 	}
 
@@ -569,7 +571,7 @@ ul{
 
     .b-comments__item{
         width: 86%;
-        margin: 0 0 0 14%;
+        margin: 0 0 2% 14%;
         clear:both;
     }
 
@@ -591,6 +593,18 @@ ul{
                 font-size: 6em;
                 margin: -0.6em 0 0 -0.25em;
             }
+
+        .b-comments__ava_img{
+            border:none;
+        }
+         .b-comments__ava-img{
+             position: absolute;
+             z-index: 10;
+             height: 100%;
+             width: 100%;
+             border-radius: 50%;
+         }
+
         .b-comments__content{
             float: left;
             width: 76%;
@@ -769,19 +783,204 @@ ul{
     
 }
 .b-works__list{
-    
+    column-count: 4;
+    column-gap: 0;
+    margin: 0 0 5% 0;
 }
     .b-works__item{
-        float: left;
-        width: 25%;
-        clear: right;
-        overflow: hidden;
-        vertical-align: top;
+        /*break-inside: avoid;*/
+        margin: 0;
+        padding: 0;
     }
         .b-works__img{
-            height: 100%;
+            height: auto;
+            margin: 0;
+            padding: 0;
         }
         .b-works__list-content{
-            display: none;
+            position: absolute;
         }
+/*slider coments*/
+.b-comments__slider{
+    position: relative;
+}
+/*end slider coments*/
 /*end b-works*/
+
+/*b-client*/
+.b-client{
+    background: url("../img/bg-client.jpg") no-repeat;
+    background-size: cover;
+    padding: 2% 0;
+    margin: 0 0 7% 0;
+}
+
+        .b-client__item{
+            position: relative;
+            float: left;
+            width: 46%;
+            padding: 0 2%;
+            margin: 0 0 3% 0;
+        }
+
+            .b-client_ava{
+                float: left;
+                width: 9em;
+                height: 9em;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+                .b-client__ava-img{
+                    width: 100%;
+                    height: 100%;
+                }
+
+            .b-client__content{
+                padding: 0 0 0 30%;
+            }
+                .b-client__name{
+                    font-family:'montserratregular', sans-serif;
+                    font-size: 0.875em;
+                    text-transform: uppercase;
+                }
+
+                .b-client__position{
+                    position: relative;
+                    font-family: cuprumbold, sans-serif;
+                    font-size: 0.937em;
+                    padding: 0 0 2% 0;
+                }
+                    .b-client__position:after{
+                        position: absolute;
+                        left: 0;
+                        bottom: -1em;
+                        content: " ";
+                        height: 3px;
+                        width: 20%;
+                        background: #f38181;
+                        margin: 0 0 2% 0;
+                    }
+
+                .b-client__text{
+                    font-family: 'robotoregular', sans-serif;
+                    font-size: 0.937em;
+                    color: #999;
+                    line-height: 1.7;
+                }
+/*end b-client*/
+
+/*b-blog*/
+.b-post__item{
+    position: relative;
+    float: left;
+    width: 30%;
+    margin: 0 0 3% 3%;
+}
+    .b-post__date{
+        position: absolute;
+        top: 44%;
+        left: -2%;
+        background: #95e1d3;
+        padding: 2%;
+    }
+
+        .b-post__date-num,
+        .b-post__date-mount{
+            text-align: center;
+            color: #fff;
+        }
+
+        .b-post__date-num{
+            font-family: 'montserratbold', 'montserratregular', sans-serif;
+            font-size: 1.875em;
+        }
+
+        .b-post__date-mount{
+            font-family: 'robotoregular', sans-serif;
+            font-style: italic;
+            font-size: 0.937em;
+        }
+
+     .b-post__img{
+         height: auto;
+         width: 100%;
+         margin: 0 0 4% 0;
+     }
+
+     .b-post__head{
+         font-family: 'montserratbold', 'montserratregular', sans-serif;
+         font-size: 0.875em;
+         text-transform: uppercase;
+         margin: 0 0 2% 0;
+     }
+
+     .b-post__desc{
+         font-family: 'robotoregular', sans-serif;
+         font-size: 0.937em;
+         padding: 0 0 3% 0;
+         color: #999;
+         border-bottom: 1px solid #e5e5e5;
+         margin: 0 0 3% 0;
+     }
+
+     .b-post__btn-view,
+     .b-post__btn-coment{
+         float: left;
+         margin: 0 3% 0 0;
+         font-family: 'robotoregular', sans-serif;
+         font-style: italic;
+         color: #999;
+     }
+
+        .b-post__btn-view:before,
+        .b-post__btn-coment:before{
+            font-family: 'ico-fonts107-mogo10regular';
+            color: #95e1d3;
+            font-size: 2em;
+            margin: 0 5% 0 0;
+        }
+        .b-post__btn-view:before{
+            content: "J";
+        }
+        .b-post__btn-coment:before{
+            content: "M";
+        }
+/*end b-blog*/
+
+/*b-map*/
+.b-map{
+    background: url("../img/bg-map.jpg") no-repeat;
+    background-size: cover;
+    padding: 5% 0;
+}
+    .b-map__link{
+        position: relative;
+        display: block;
+        font-family: 'montserratbold', 'montserratregular', sans-serif;
+        font-size: 1.5em;
+        text-align: center;
+        text-decoration: none;
+        color: #f38181;
+    }
+        .b-map__link:before{
+            content: "K";
+            display: block;
+            position: absolute;
+            left: 49%;
+            top: -260%;
+            font-family: 'ico-fonts107-mogo10regular';
+            font-size: 3em;
+        }
+
+        .b-map__link:after{
+            position: absolute;
+            left: 50%;
+            bottom: -1em;
+            content: " ";
+            height: 3px;
+            width: 70px;
+            background: #f38181;
+            margin: 0 0 0 -35px;
+        }
+
+/*end b-map*/

@@ -1,6 +1,6 @@
-$(document).ready(function(){
+$(document).load(function(){
     $(".b-services2__list-desc").niceScroll({cursorcolor:"#95e1d3"});
-    moduleMasonry.action();
+    //moduleMasonry.action();
 });
 
 // module view block
@@ -26,23 +26,16 @@ moduleMasonry - модуль адаптивных плиток
 var moduleMasonry = (function(){
     var fields = {
         container : $(".b-works__list"),
-        element : $(".b-works__item")
+        element : ".b-works__item"
     }
     
-    var _actionMasonry = function(){
-        fields.container.imagesLoaded(function(){
-            fields.container.masonry({
-                itemSelector : fields.element,
-                columnWidth : fields.element,
-                percentPosition: true
-            });
-        });
-        
-    };
-    
+
     return {
         action : function(){
-            _actionMasonry();
+            fields.container.masonry({
+                columnWidth: "25%",
+                itemSelector: fields.element
+            });
         }
     }
 })();
