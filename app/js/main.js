@@ -25,17 +25,27 @@ moduleMasonry - модуль адаптивных плиток
 */
 var moduleMasonry = (function(){
     var fields = {
-        container : $(".b-works__list"),
-        element : ".b-works__item"
+        containerWorks : $(".b-works__list"),
+        elementWorks : ".b-works__item",
+        widthWorks : "25%",
+        containerPost : $(".b-post__list"),
+        elementPost : ".b-post__item",
+        widthPost : "33%"
     }
     
 
+    var _masonryMethod = function(container, element, widDt){
+        container.masonry({
+                columnWidth: widDt,
+                itemSelector: element
+            });
+        console.log(""+container);
+    }
+
     return {
         action : function(){
-            fields.container.masonry({
-                columnWidth: "25%",
-                itemSelector: fields.element
-            });
+            _masonryMethod(containerWorks, elementWorks, widthWorks);
+            _masonryMethod( containerPost, elementPost, widthPost);
         }
     }
 })();
